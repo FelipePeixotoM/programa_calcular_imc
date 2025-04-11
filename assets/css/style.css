@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --background: #FFC1B4;
+    --color-inputs:#efd7d2;
+    --color-button:#efd7d2;
+    --color-button-hover:#d6b2ac;
+    --font-family:"Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    width:100vw;
+    height: 100vh;
+    background-color: var(--background);
+    font-size: 24px;
+    font-family: var(--font-family);
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+
+    width: 70%;
+    
+}
+
+.containerTexto {
+    display: flex;
+    gap:80px;
+}
+
+input {
+    box-sizing: border-box;
+    background-color: var(--color-inputs);
+    border:none;
+    border-radius: 15px;
+    height: 30px;
+    padding:0 25px;
+    
+}
+
+input:focus {
+    outline: solid 2px var(--color-button);
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+
+    width: 100%;
+}
+
+button {
+    border:none;
+    width: 80px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: var(--color-button);
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
+    transform: translateX(2px);
+}
+
+.paragrafoGenerico {
+    background-color: green;
+}
